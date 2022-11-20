@@ -1,0 +1,140 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 16px;
+    background-color: hsl(217, 54%, 11%);
+    color: hsl(0, 0%, 100%);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 15rem;
+    height: 24.5rem;
+    border: 15px;
+    background-color: hsl(216, 50%, 16%);
+}
+
+.child{
+    width: 13rem;
+}
+
+.nft-image{
+    position: relative;
+    margin-bottom: 0.8rem;
+}
+
+.nft-image img{
+    width: 100%;
+    
+    border-radius: 10px;
+    transition: all .3s linear;
+}
+
+figcaption{
+    width: 13rem;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0;
+}
+
+.eye{
+    width: 4rem;
+    padding: 5.25rem;
+}
+
+.nft-image img:hover{
+    transform: scale(1.05);
+}
+
+.nft-image:hover figcaption{
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0.65;
+    transform: scale(1.05);
+}
+
+
+h1{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+
+.heading:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+p{
+    font-size: 0.8rem;
+    color: hsl(215, 51%, 70%);
+}
+
+.stats{
+    display: flex;
+    column-gap: 0.5rem;
+    /* justify-content: space-between; */
+    margin-top: 1.15rem;
+    margin-bottom: 1rem;
+    color: hsl(215, 51%, 70%);
+}
+
+.stats img{
+    width: 0.5rem;
+}
+.price{
+    color: hsl(178, 100%, 50%);
+}
+
+.days{
+    margin-left: auto;
+}
+
+.creator{
+    margin-top:.5rem;
+    align-items: center;   
+    display: flex; 
+    column-gap: .75rem;
+}
+
+.creator img{
+    width: 1.3rem;
+}
+
+.creator p{
+    display: inline;
+}
+
+.name{
+    color: white;
+}
+
+.name:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: antiquewhite;
+    bottom: 10px;
+    position:absolute;
+}
+.attribution a {
+    color: hsl(228, 33%, 94%);
+}
